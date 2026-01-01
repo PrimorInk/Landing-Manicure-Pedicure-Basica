@@ -74,7 +74,7 @@ body {
 
 @media (max-width: 768px) {
   .nav-list {
-    flex-direction: ;
+    flex-direction: column;
     gap: 15px;
   }
 }
@@ -111,8 +111,12 @@ h2 {
   text-align: center;
 }
 
+p {
+  line-height: 1.6;
+}
+
 .hero {
-  min-height: 60vh;
+  min-height: 80vh;
   max-height: 700px;
   position: relative;
   background: url(hero.jpg) center/cover no-repeat;
@@ -121,6 +125,8 @@ h2 {
   color: #fff;
   background-color: #00000055;
   overflow: hidden;
+  align-items: center;
+  display: flex;
 }
 
 .hero-container {
@@ -129,7 +135,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 40px;
-  min-height: 60vh;
+  min-height: 80vh;
   flex-direction: column;  
   justify-content: center;
   text-align: center;
@@ -187,6 +193,10 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    min-height: 70vh;
+    padding: 60px 20px;
+  }
   .hero-container {
     flex-direction: column;
     text-align: center;
@@ -199,7 +209,6 @@ h2 {
   .hero-text h1 {
     font-size: 2.1rem;
   }
-}
 
   .hero::before {
     background: rgba(0,0,0,.7);
@@ -208,7 +217,6 @@ h2 {
   .hero h1 {
     font-size: 2.2rem;
   }
-}
 
 #sobre {
   display: flex;
@@ -217,6 +225,7 @@ h2 {
   margin: 0 auto;
   padding: 0 20px;
   text-align: center;
+  padding: 60px 20px;
 }
 
 .sobre-container {
@@ -244,16 +253,19 @@ h2 {
 .sobre-texto h2{
   font-size: 2rem;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .sobre-texto {
   max-width: 500px;
+  text-align: center;
 }
 
 .sobre p {
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -265,7 +277,6 @@ h2 {
   .about img {
     max-width: 300px;
   }
-}
 
 .cardapio {
   background-color: #fdfdfd;
@@ -470,6 +481,11 @@ h2 {
   font-size: 1.4rem;
   text-decoration: none;
   transition: transform 0.2s ease;
+}
+
+.footer-social a:hover {
+  transform: scale(1.15);
+  color: #ffe6eb;
 }
 
 .footer-social a:hover {
